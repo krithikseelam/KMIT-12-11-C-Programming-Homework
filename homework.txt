@@ -1,0 +1,142 @@
+*Question 1:* Electricity Bill Calculator
+Write a C program to calculate the electricity bill based on the number of units consumed.
+
+The electricity charges are calculated as follows:
+
+First 100 units: Rs. 2 per unit
+
+Next 100 units: Rs. 3 per unit
+
+Above 200 units: Rs. 5 per unit
+
+Define a function named calculateBill() that accepts the number of units consumed as an integer argument and returns the total electricity bill as a floating-point value.
+
+The main() function should read the units consumed, call calculateBill(), and display the returned amount. Reject negative units.
+
+Sample Input:
+
+Enter units: 250
+Expected Output:
+
+Electricity Bill: Rs. 750.00
+*Question 2:* Student Grade Calculator
+Write a C program to calculate the total marks, percentage, and grade of a student based on marks obtained in three subjects. Each subject carries a maximum of 100 marks.
+
+Define three separate functions:
+
+calculateTotal() accepts three subject marks and returns their total.
+
+calculatePercentage() accepts the total marks and returns the percentage.
+
+findGrade() accepts the percentage and returns the corresponding grade as a character.
+
+Use the following grading criteria:
+
+90% and above: Grade A
+
+75% to below 90%: Grade B
+
+60% to below 75%: Grade C
+
+40% to below 60%: Grade D
+
+Below 40%: Grade F
+
+The main() function should read the marks, validate that each mark is between 0 and 100, call the appropriate functions, and display the results.
+
+Sample Input:
+
+Enter marks: 85 90 95
+Expected Output:
+
+Total: 270
+Percentage: 90.00
+Grade: A
+*Question 3:* Number Analysis Using Functions
+Write a C program that accepts a positive integer and performs the following operations using separate user-defined functions:
+
+Count the number of digits in the given integer.
+
+Calculate the sum of its digits.
+
+Reverse the digits of the given integer.
+
+Define three functions named countDigits(), sumDigits(), and reverseNumber().
+
+Each function should accept an integer as an argument and return the corresponding result.
+
+The main() function should read the number, call all three functions independently, and display their returned values. Assume the input and reversed number fit within the range of int.
+
+Sample Input:
+
+Enter number: 12345
+Expected Output:
+
+Number of digits: 5
+Sum of digits: 15
+Reversed number: 54321
+*Question 4:* Prime Number Analysis Using Functions
+Write a C program that accepts a positive integer and determines whether it is a prime number. The program should also display all prime numbers from 2 up to the entered number.
+
+Define two user-defined functions:
+
+isPrime() accepts an integer and returns 1 if the number is prime; otherwise, it returns 0.
+
+displayPrimes() accepts an integer representing the upper limit and displays all prime numbers up to that limit.
+
+The displayPrimes() function must call isPrime() to check whether each number is prime.
+
+The main() function should read the integer, call isPrime() to check the entered number, and then call displayPrimes() to display the prime numbers.
+
+Sample Input:
+
+Enter number: 20
+Expected Output:
+
+20 is not a prime number.
+Prime numbers up to 20:
+2 3 5 7 11 13 17 19
+*Question 5:* Menu-Driven Banking Application
+Write a menu-driven C program that simulates basic banking operations. Assume that the initial account balance is Rs. 5000.
+
+The program should provide the following options:
+
+Deposit Money
+
+Withdraw Money
+
+Check Balance
+
+Exit
+
+Define three user-defined functions:
+
+deposit() accepts the current balance and deposit amount as arguments and returns the updated balance.
+
+withdraw() accepts the current balance and withdrawal amount as arguments. If sufficient funds are available, it returns the updated balance. Otherwise, it displays an appropriate message and returns the unchanged balance.
+
+displayBalance() accepts the current balance and displays it without returning any value.
+
+The main() function should repeatedly display the menu, read the user's choice, call the appropriate function, and update the account balance using the returned value.
+
+The program should reject zero or negative transaction amounts and continue until the user selects Exit.
+
+Sample Execution:
+
+Initial Balance: Rs. 5000.00
+
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Exit
+
+Enter choice: 1
+Enter amount: 2000
+Deposit Successful
+
+Enter choice: 2
+Enter amount: 1500
+Withdrawal Successful
+
+Enter choice: 3
+Current Balance: Rs. 5500.00
